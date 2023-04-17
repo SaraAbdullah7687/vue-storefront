@@ -1,0 +1,27 @@
+import { UseUserBilling, Context, FactoryParams, CustomQuery, PlatformApi } from '../types';
+export interface UseUserBillingFactoryParams<USER_BILLING, USER_BILLING_ITEM, API extends PlatformApi = any> extends FactoryParams<API> {
+    addAddress: (context: Context, params: {
+        address: Readonly<USER_BILLING_ITEM>;
+        billing: Readonly<USER_BILLING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_BILLING>;
+    deleteAddress: (context: Context, params: {
+        address: Readonly<USER_BILLING_ITEM>;
+        billing: Readonly<USER_BILLING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_BILLING>;
+    updateAddress: (context: Context, params: {
+        address: Readonly<USER_BILLING_ITEM>;
+        billing: Readonly<USER_BILLING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_BILLING>;
+    load: (context: Context, params: {
+        billing: Readonly<USER_BILLING>;
+    }) => Promise<USER_BILLING>;
+    setDefaultAddress: (context: Context, params: {
+        address: Readonly<USER_BILLING_ITEM>;
+        billing: Readonly<USER_BILLING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_BILLING>;
+}
+export declare const useUserBillingFactory: <USER_BILLING, USER_BILLING_ITEM, API extends PlatformApi = any>(factoryParams: UseUserBillingFactoryParams<USER_BILLING, USER_BILLING_ITEM, API>) => () => UseUserBilling<USER_BILLING, USER_BILLING_ITEM, API>;

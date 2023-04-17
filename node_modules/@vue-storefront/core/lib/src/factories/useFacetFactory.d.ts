@@ -1,0 +1,6 @@
+import { UseFacet, FacetSearchResult, Context, FactoryParams } from '../types';
+export interface UseFacetFactoryParams<SEARCH_DATA> extends FactoryParams {
+    search: (context: Context, params?: FacetSearchResult<SEARCH_DATA>) => Promise<SEARCH_DATA>;
+}
+declare const useFacetFactory: <SEARCH_DATA>(factoryParams: UseFacetFactoryParams<SEARCH_DATA>) => (id?: string) => UseFacet<SEARCH_DATA>;
+export { useFacetFactory };

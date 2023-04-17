@@ -27,8 +27,8 @@ export default async () => {
     ssr: true,
     dev: process.env.VSF_NUXT_APP_ENV !== 'production',
     publicRuntimeConfig: {
-      middlewareUrl: process.env.API_BASE_URL || 'http://vsf-app-aupir.ondigitalocean.app:8181',
-      ssrMiddlewareUrl: process.env.API_SSR_BASE_URL || 'http://vsf-app-aupir.ondigitalocean.app:8181'
+      middlewareUrl: process.env.API_BASE_URL || 'http://localhost:8181',
+      ssrMiddlewareUrl: process.env.API_SSR_BASE_URL || 'http://localhost:8181'
     },
     server: {
       port: process.env.VSF_NUXT_APP_PORT,
@@ -103,7 +103,7 @@ export default async () => {
       '~/modules/checkout',
       '~/modules/review',
       ['nuxt-i18n', {
-        baseUrl: process.env.VSF_STORE_URL || 'http://vsf-app-aupir.ondigitalocean.app:3000',
+        baseUrl: process.env.VSF_STORE_URL || 'https://vsf-app-aupir.ondigitalocean.app:3000',
       }],
       'cookie-universal-nuxt',
       'vue-scrollto/nuxt',

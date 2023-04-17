@@ -1,0 +1,114 @@
+export declare const Brightness: {
+    readonly Auto: "auto_brightness";
+    readonly Default: "brightness";
+    readonly Hsb: "hsb";
+};
+export declare const Contrast: {
+    readonly Default: "contrast";
+    readonly Auto: "auto_contrast";
+};
+export declare const ColorChannel: {
+    readonly Red: "red";
+    readonly Green: "green";
+    readonly Blue: "blue";
+};
+export declare const ColorFilter: {
+    readonly Negate: "negate";
+    readonly Sepia: "sepia";
+    readonly Grayscale: "grayscale";
+    readonly Blackwhite: "blackwhite";
+    readonly Tint: "tint";
+};
+export declare const ColorAdjustment: {
+    readonly Hue: "hue";
+    readonly Saturation: "saturation";
+    readonly Colorize: "colorize";
+    readonly ReplaceColor: "replace_color";
+    readonly Recolor: "recolor";
+    readonly Theme: "theme";
+    readonly Vibrance: "vibrance";
+    readonly AutoColor: "auto_color";
+    readonly Vectorize: "vectorize";
+    readonly Improve: "improve";
+    readonly FillLight: "fill_light";
+    readonly Outline: "outline";
+    readonly CutOut: "cut_out";
+    readonly Cartoonify: "cartoonify";
+    readonly Fade: "fade";
+    readonly StyleTransfer: "style_transfer";
+    readonly Lightroom: "lightroom";
+    readonly Art: "art";
+    readonly ViesusCorrect: "viesus_correct";
+    readonly Gamma: "gamma";
+    readonly Screen: "screen";
+    readonly Multiply: "multiply";
+    readonly Overlay: "overlay";
+    readonly AntiRemoval: "anti_removal";
+    readonly Bgremoval: "bgremoval";
+    readonly MakeTransparent: "make_transparent";
+    readonly OpacityThreshold: "opacity_threshold";
+    readonly Trim: "trim";
+    readonly Shadow: "shadow";
+    readonly Distort: "distort";
+    readonly Shear: "shear";
+    readonly Displace: "displace";
+    readonly OilPaint: "oil_paint";
+    readonly Redeye: "redeye";
+    readonly AdvRedeye: "adv_redeye";
+    readonly Vignette: "vignette";
+    readonly Gradient_fade: "gradient_fade";
+    readonly Sharpen: "sharpen";
+    readonly UnsharpMask: "unsharp_mask";
+    readonly OrderedDither: "ordered_dither";
+    readonly Loop: "loop";
+};
+export declare const Colorblind: {
+    readonly Assist: "assist_colorblind";
+    readonly Simulate: "simulate_colorblind";
+};
+export declare const PixelateEffects: {
+    readonly Default: "pixelate";
+    readonly Region: "pixelate_region";
+    readonly Faces: "pixelate_faces";
+};
+export declare const BlurEffects: {
+    readonly Default: "blur";
+    readonly Region: "blur_region";
+    readonly Faces: "blur_faces";
+};
+export declare const VideoEffects: {
+    Accelerate: string;
+    Reverse: string;
+    Boomerang: string;
+    Loop: string;
+    ProgressBar: string;
+    Transparent: string;
+    Preview: string;
+    Transition: string;
+    Noise: string;
+    Deshake: string;
+    Volume: string;
+};
+export declare const ArtisticFilters: {
+    AlDente: string;
+    Athena: string;
+    Audrey: string;
+    Aurora: string;
+    Daguerre: string;
+    Eucalyptus: string;
+    Fes: string;
+    Frost: string;
+    Hairspray: string;
+    Hokusai: string;
+    Incognito: string;
+    Linen: string;
+    Peacock: string;
+    Primavera: string;
+    quartz: string;
+    RedRock: string;
+    Refresh: string;
+    Sizzle: string;
+    Sonnet: string;
+    Ukulele: string;
+    Zorro: string;
+};

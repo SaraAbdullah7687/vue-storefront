@@ -1,0 +1,14 @@
+import { ApiClientMethod } from '../../types';
+interface ApplyingContextHooks {
+    before: ({ callName, args }: {
+        callName: any;
+        args: any;
+    }) => any[];
+    after: ({ callName, args, response }: {
+        callName: any;
+        args: any;
+        response: any;
+    }) => any;
+}
+declare const applyContextToApi: (api: Record<string, ApiClientMethod>, context: any, hooks?: ApplyingContextHooks) => {};
+export { applyContextToApi };

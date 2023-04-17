@@ -1,0 +1,7 @@
+/**
+ * Adds prefix with base path configured in router.base to provided url
+ * @param {string} path - url to which base path will be added
+ * @returns Relative path prefixed with router.base or not modified absolute path (it needs start from http or https)
+ */
+declare function addBasePath(path: string): string;
+export { addBasePath };

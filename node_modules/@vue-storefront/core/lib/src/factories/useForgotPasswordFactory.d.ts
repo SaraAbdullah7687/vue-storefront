@@ -1,0 +1,20 @@
+import { CustomQuery, Context, FactoryParams, UseForgotPassword } from '../types';
+interface SetNewPasswordParams {
+    tokenValue: string;
+    newPassword: string;
+}
+interface ResetPasswordParams {
+    email: string;
+}
+export interface UseForgotPasswordFactoryParams<RESULT> extends FactoryParams {
+    resetPassword: (context: Context, params: ResetPasswordParams & {
+        currentResult: RESULT;
+        customQuery?: CustomQuery;
+    }) => Promise<RESULT>;
+    setNewPassword: (context: Context, params: SetNewPasswordParams & {
+        currentResult: RESULT;
+        customQuery?: CustomQuery;
+    }) => Promise<RESULT>;
+}
+export declare function useForgotPasswordFactory<RESULT>(factoryParams: UseForgotPasswordFactoryParams<RESULT>): () => UseForgotPassword<RESULT>;
+export {};

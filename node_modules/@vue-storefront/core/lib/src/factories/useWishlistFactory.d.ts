@@ -1,0 +1,24 @@
+import { UseWishlist, CustomQuery, Context, FactoryParams, PlatformApi } from '../types';
+export interface UseWishlistFactoryParams<WISHLIST, WISHLIST_ITEM, PRODUCT, API extends PlatformApi = any> extends FactoryParams<API> {
+    load: (context: Context, params: {
+        customQuery?: CustomQuery;
+    }) => Promise<WISHLIST>;
+    addItem: (context: Context, params: {
+        currentWishlist: WISHLIST;
+        product: PRODUCT;
+        customQuery?: CustomQuery;
+    }) => Promise<WISHLIST>;
+    removeItem: (context: Context, params: {
+        currentWishlist: WISHLIST;
+        product: WISHLIST_ITEM;
+        customQuery?: CustomQuery;
+    }) => Promise<WISHLIST>;
+    clear: (context: Context, params: {
+        currentWishlist: WISHLIST;
+    }) => Promise<WISHLIST>;
+    isInWishlist: (context: Context, params: {
+        currentWishlist: WISHLIST;
+        product: PRODUCT;
+    }) => boolean;
+}
+export declare const useWishlistFactory: <WISHLIST, WISHLIST_ITEM, PRODUCT, API extends PlatformApi = any>(factoryParams: UseWishlistFactoryParams<WISHLIST, WISHLIST_ITEM, PRODUCT, API>) => () => UseWishlist<WISHLIST, WISHLIST_ITEM, PRODUCT, API>;

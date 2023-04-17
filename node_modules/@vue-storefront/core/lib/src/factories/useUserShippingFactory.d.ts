@@ -1,0 +1,27 @@
+import { UseUserShipping, Context, FactoryParams, CustomQuery, PlatformApi } from '../types';
+export interface UseUserShippingFactoryParams<USER_SHIPPING, USER_SHIPPING_ITEM, API extends PlatformApi = any> extends FactoryParams<API> {
+    addAddress: (context: Context, params: {
+        address: Readonly<USER_SHIPPING_ITEM>;
+        shipping: Readonly<USER_SHIPPING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_SHIPPING>;
+    deleteAddress: (context: Context, params: {
+        address: Readonly<USER_SHIPPING_ITEM>;
+        shipping: Readonly<USER_SHIPPING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_SHIPPING>;
+    updateAddress: (context: Context, params: {
+        address: Readonly<USER_SHIPPING_ITEM>;
+        shipping: Readonly<USER_SHIPPING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_SHIPPING>;
+    load: (context: Context, params: {
+        shipping: Readonly<USER_SHIPPING>;
+    }) => Promise<USER_SHIPPING>;
+    setDefaultAddress: (context: Context, params: {
+        address: Readonly<USER_SHIPPING_ITEM>;
+        shipping: Readonly<USER_SHIPPING>;
+        customQuery?: CustomQuery;
+    }) => Promise<USER_SHIPPING>;
+}
+export declare const useUserShippingFactory: <USER_SHIPPING, USER_SHIPPING_ITEM, API extends PlatformApi = any>(factoryParams: UseUserShippingFactoryParams<USER_SHIPPING, USER_SHIPPING_ITEM, API>) => () => UseUserShipping<USER_SHIPPING, USER_SHIPPING_ITEM, API>;

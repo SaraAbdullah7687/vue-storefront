@@ -1,0 +1,12 @@
+declare const i18nRedirectsUtil: ({ path, defaultLocale, availableLocales, cookieLocale, acceptedLanguages, autoRedirectByLocale }: {
+    path: string;
+    defaultLocale: string;
+    cookieLocale: string;
+    availableLocales: string[];
+    acceptedLanguages: string[];
+    autoRedirectByLocale: boolean;
+}) => {
+    getRedirectPath: () => string;
+    getTargetLocale: () => string;
+};
+export default i18nRedirectsUtil;

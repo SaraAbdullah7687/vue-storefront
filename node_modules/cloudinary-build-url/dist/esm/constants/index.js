@@ -1,0 +1,38 @@
+export var SEO_TYPES = {
+    "image/upload": "images",
+    "image/private": "private_images",
+    "image/authenticated": "authenticated_images",
+    "raw/upload": "files",
+    "video/upload": "videos"
+};
+export var TRANSFORMERS = {
+    angle: 'a',
+    rotate: 'a',
+    background: 'b',
+    color: 'co',
+    colorSpace: 'cs',
+    customFunction: 'fn',
+    defaultImage: 'd',
+    density: 'dn',
+    dpr: 'dpr',
+    opacity: 'o',
+    format: 'f',
+    gravity: 'g',
+    overlay: 'l',
+    page: 'pg',
+    prefix: 'p',
+    quality: 'q',
+    radius: 'r',
+    bitRate: 'br',
+    keyframeInterval: 'ki',
+    audioCodec: 'ac',
+    audioFrequency: 'af',
+    delay: 'dl',
+    ocr: 'ocr',
+    streamingProfile: 'sp',
+    transformation: 't',
+    underlay: 'u',
+    videoCodec: 'vc',
+    videoSampling: 'vs',
+    zoom: 'z'
+};

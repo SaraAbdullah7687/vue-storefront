@@ -1,0 +1,7 @@
+import { CustomQuery, UseCategory, Context, FactoryParams, PlatformApi } from '../types';
+export interface UseCategoryFactoryParams<CATEGORY, CATEGORY_SEARCH_PARAMS, API extends PlatformApi = any> extends FactoryParams<API> {
+    categorySearch: (context: Context, params: CATEGORY_SEARCH_PARAMS & {
+        customQuery?: CustomQuery;
+    }) => Promise<CATEGORY[]>;
+}
+export declare function useCategoryFactory<CATEGORY, CATEGORY_SEARCH_PARAMS, API extends PlatformApi = any>(factoryParams: UseCategoryFactoryParams<CATEGORY, CATEGORY_SEARCH_PARAMS, API>): (id: string) => UseCategory<CATEGORY, CATEGORY_SEARCH_PARAMS, API>;

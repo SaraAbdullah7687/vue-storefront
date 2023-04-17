@@ -1,0 +1,57 @@
+export declare const STORAGE_TYPES: {
+    readonly UPLOAD: "upload";
+    readonly FETCH: "fetch";
+    readonly PRIVATE: "private";
+    readonly AUTHENTICATED: "authenticated";
+    readonly SPRITE: "sprite";
+    readonly FACEBOOK: "facebook";
+    readonly TWITTER: "twitter";
+    readonly YOUTUBE: "youtube";
+    readonly VIMEO: "vimeo";
+    readonly MULTI: "multi";
+    readonly INSTAGRAM: "instagram";
+    readonly HULU: "hulu";
+    readonly ANIMOTO: "animoto";
+    readonly DAILYMOTION: "dailymotion";
+};
+export declare const RESOURCE_TYPES: {
+    readonly IMAGE: "image";
+    readonly VIDEO: "video";
+    readonly RAW: "raw";
+};
+export declare const VIDEO_SOURCE_TYPES: {
+    readonly WEBM: "webm";
+    readonly MP4: "mp4";
+    readonly OGV: "ogv";
+    readonly FLV: "flv";
+    readonly M3U8: "m3u8";
+    readonly TS: "ts";
+    readonly MOV: "mov";
+    readonly MKV: "mkv";
+    readonly MPD: "mpd";
+};
+export declare const ImageFormats: {
+    GIF: string;
+    PNG: string;
+    JPG: string;
+    BMP: string;
+    ICO: string;
+    PDF: string;
+    TIFF: string;
+    EPS: string;
+    JPC: string;
+    JP2: string;
+    PSD: string;
+    WEBP: string;
+    ZIP: string;
+    SVG: string;
+    WDP: string;
+    HDX: string;
+    DJVU: string;
+    AI: string;
+    FLIF: string;
+    BPG: string;
+    MIFF: string;
+    TGA: string;
+    HEIC: string;
+};

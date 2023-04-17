@@ -1,0 +1,11 @@
+import { Context as NuxtContext } from '@nuxt/types';
+import { ApiClientMethod } from '../../types';
+interface CreateProxiedApiParams {
+    givenApi: Record<string, ApiClientMethod>;
+    client: any;
+    tag: string;
+}
+export declare const createProxiedApi: ({ givenApi, client, tag }: CreateProxiedApiParams) => Record<string, ApiClientMethod>;
+export declare const getCookies: (context: NuxtContext) => string;
+export declare const getIntegrationConfig: (context: NuxtContext, configuration: any) => any;
+export {};

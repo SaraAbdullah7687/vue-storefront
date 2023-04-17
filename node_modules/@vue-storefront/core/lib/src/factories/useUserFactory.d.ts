@@ -1,0 +1,32 @@
+import { UseUser, Context, FactoryParams, CustomQuery, PlatformApi } from '../types';
+export interface UseUserFactoryParams<USER, UPDATE_USER_PARAMS, REGISTER_USER_PARAMS, API extends PlatformApi = any> extends FactoryParams<API> {
+    load: (context: Context, params?: {
+        customQuery: CustomQuery;
+    }) => Promise<USER>;
+    logOut: (context: Context, params?: {
+        currentUser: USER;
+    }) => Promise<void>;
+    updateUser: (context: Context, params: {
+        currentUser: USER;
+        updatedUserData: UPDATE_USER_PARAMS;
+        customQuery?: CustomQuery;
+    }) => Promise<USER>;
+    register: (context: Context, params: REGISTER_USER_PARAMS & {
+        customQuery?: CustomQuery;
+    }) => Promise<USER>;
+    logIn: (context: Context, params: {
+        username: string;
+        password: string;
+        customQuery?: CustomQuery;
+    }) => Promise<USER>;
+    changePassword: (context: Context, params: {
+        currentUser: USER;
+        currentPassword: string;
+        newPassword: string;
+        customQuery?: CustomQuery;
+    }) => Promise<USER>;
+}
+export declare const useUserFactory: <USER, UPDATE_USER_PARAMS, REGISTER_USER_PARAMS extends {
+    email: string;
+    password: string;
+}, API extends PlatformApi = any>(factoryParams: UseUserFactoryParams<USER, UPDATE_USER_PARAMS, REGISTER_USER_PARAMS, API>) => () => UseUser<USER, UPDATE_USER_PARAMS, API>;

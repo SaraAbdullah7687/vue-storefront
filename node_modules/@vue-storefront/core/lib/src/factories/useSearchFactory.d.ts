@@ -1,0 +1,7 @@
+import { CustomQuery, UseSearch, Context, FactoryParams } from '../types';
+export interface UseSearchFactoryParams<RESULT, SEARCH_PARAMS> extends FactoryParams {
+    search: (context: Context, params: SEARCH_PARAMS & {
+        customQuery?: CustomQuery;
+    }) => Promise<RESULT>;
+}
+export declare function useSearchFactory<RESULT, SEARCH_PARAMS>(factoryParams: UseSearchFactoryParams<RESULT, SEARCH_PARAMS>): (id: string) => UseSearch<RESULT, SEARCH_PARAMS>;

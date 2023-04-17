@@ -1,0 +1,7 @@
+import { CustomQuery, Context, FactoryParams, UseMakeOrder, PlatformApi } from '../types';
+export interface UseMakeOrderFactoryParams<ORDER, API extends PlatformApi = any> extends FactoryParams<API> {
+    make: (context: Context, params: {
+        customQuery?: CustomQuery;
+    }) => Promise<ORDER>;
+}
+export declare const useMakeOrderFactory: <ORDER, API extends PlatformApi = any>(factoryParams: UseMakeOrderFactoryParams<ORDER, API>) => () => UseMakeOrder<ORDER, API>;

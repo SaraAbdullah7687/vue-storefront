@@ -1,0 +1,16 @@
+/**
+ * It extends given integartion, defined by `tag` in the context.
+ */
+export declare const createExtendIntegrationInCtx: ({ tag, nuxtCtx, inject }: {
+    tag: any;
+    nuxtCtx: any;
+    inject: any;
+}) => (integrationProperties: any) => void;
+/**
+ * It creates a function that adds an integration to the context under the given name, defined by `tag`.
+ */
+export declare const createAddIntegrationToCtx: ({ tag, nuxtCtx, inject }: {
+    tag: any;
+    nuxtCtx: any;
+    inject: any;
+}) => (integrationProperties: any) => void;

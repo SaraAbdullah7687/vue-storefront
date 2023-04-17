@@ -1,0 +1,38 @@
+export declare const SEO_TYPES: {
+    readonly "image/upload": "images";
+    readonly "image/private": "private_images";
+    readonly "image/authenticated": "authenticated_images";
+    readonly "raw/upload": "files";
+    readonly "video/upload": "videos";
+};
+export declare const TRANSFORMERS: {
+    angle: string;
+    rotate: string;
+    background: string;
+    color: string;
+    colorSpace: string;
+    customFunction: string;
+    defaultImage: string;
+    density: string;
+    dpr: string;
+    opacity: string;
+    format: string;
+    gravity: string;
+    overlay: string;
+    page: string;
+    prefix: string;
+    quality: string;
+    radius: string;
+    bitRate: string;
+    keyframeInterval: string;
+    audioCodec: string;
+    audioFrequency: string;
+    delay: string;
+    ocr: string;
+    streamingProfile: string;
+    transformation: string;
+    underlay: string;
+    videoCodec: string;
+    videoSampling: string;
+    zoom: string;
+};

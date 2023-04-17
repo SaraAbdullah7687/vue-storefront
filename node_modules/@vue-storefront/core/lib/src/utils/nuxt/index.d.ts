@@ -1,0 +1,5 @@
+import { Context as NuxtContext, Plugin as NuxtPlugin } from '@nuxt/types';
+declare type InjectFn = (key: string, value: any) => void;
+export declare type IntegrationPlugin = (pluginFn: NuxtPlugin) => NuxtPlugin;
+export declare const integrationPlugin: (pluginFn: NuxtPlugin) => (nuxtCtx: NuxtContext, inject: InjectFn) => void;
+export {};

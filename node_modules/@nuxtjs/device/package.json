@@ -1,0 +1,37 @@
+{
+  "name": "@nuxtjs/device",
+  "version": "2.1.0",
+  "description": "Device detection module for Nuxt.js",
+  "repository": "nuxt-community/device-module",
+  "license": "MIT",
+  "author": "Shinji Yamada <dotneet@gmail.com>",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "types": "lib/types.d.ts",
+  "scripts": {
+    "dev": "nuxt test/fixture",
+    "lint": "eslint --ext .js,.vue lib",
+    "new-version": "standard-version",
+    "release": "git push --follow-tags && npm publish",
+    "bot-regex": "node scripts/create-bots-regex.js",
+    "test": "jest test"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/module-test-utils": "^1.6.3",
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3",
+    "jsdom": "^16.5.2",
+    "node-fetch": "^2.6.1",
+    "nuxt-edge": "^2.15.0-26889155.dd0eea40",
+    "standard-version": "^9.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "defu": "^3.2.2"
+  }
+}

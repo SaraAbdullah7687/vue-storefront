@@ -1,0 +1,2 @@
+import { UseStoreFactoryParams, UseStore } from '../types';
+export declare function useStoreFactory<STORES>(factoryParams: UseStoreFactoryParams<STORES>): UseStore<STORES>;

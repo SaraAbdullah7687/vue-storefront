@@ -1,0 +1,20 @@
+export declare const ConditionalParams: {
+    readonly width: "w";
+    readonly initialWidth: "iw";
+    readonly height: "h";
+    readonly initialHeight: "ih";
+    readonly aspectRatio: "ar";
+    readonly intialAspectRatio: "iar";
+    readonly context: "ctx";
+    readonly metadata: "md";
+    readonly tags: "tags";
+    readonly trimmedAspectRatio: "tar";
+    readonly currentPage: "cp";
+    readonly faceCount: "fc";
+    readonly pageCount: "pc";
+    readonly pageXOffset: "px";
+    readonly pageYOffset: "py";
+    readonly initialDensity: "idn";
+    readonly illustration: "ils";
+    readonly pageNames: "pgnames";
+};

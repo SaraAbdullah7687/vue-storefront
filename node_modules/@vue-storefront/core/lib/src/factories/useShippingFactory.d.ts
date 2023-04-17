@@ -1,0 +1,12 @@
+import { UseShipping, Context, FactoryParams, CustomQuery, PlatformApi } from '../types';
+export interface UseShippingParams<SHIPPING, SHIPPING_PARAMS, API extends PlatformApi = any> extends FactoryParams<API> {
+    load: (context: Context, params: {
+        customQuery?: CustomQuery;
+    }) => Promise<SHIPPING>;
+    save: (context: Context, params: {
+        params: SHIPPING_PARAMS;
+        shippingDetails: SHIPPING;
+        customQuery?: CustomQuery;
+    }) => Promise<SHIPPING>;
+}
+export declare const useShippingFactory: <SHIPPING, SHIPPING_PARAMS, API extends PlatformApi = any>(factoryParams: UseShippingParams<SHIPPING, SHIPPING_PARAMS, API>) => () => UseShipping<SHIPPING, SHIPPING_PARAMS, API>;

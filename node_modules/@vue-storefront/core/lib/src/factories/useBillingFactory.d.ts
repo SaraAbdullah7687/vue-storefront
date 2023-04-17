@@ -1,0 +1,12 @@
+import { UseBilling, Context, FactoryParams, CustomQuery, PlatformApi } from '../types';
+export interface UseBillingParams<BILLING, BILLING_PARAMS, API extends PlatformApi = any> extends FactoryParams<API> {
+    load: (context: Context, params: {
+        customQuery?: CustomQuery;
+    }) => Promise<BILLING>;
+    save: (context: Context, params: {
+        params: BILLING_PARAMS;
+        billingDetails: BILLING;
+        customQuery?: CustomQuery;
+    }) => Promise<BILLING>;
+}
+export declare const useBillingFactory: <BILLING, BILLING_PARAMS, API extends PlatformApi = any>(factoryParams: UseBillingParams<BILLING, BILLING_PARAMS, API>) => () => UseBilling<BILLING, BILLING_PARAMS, API>;

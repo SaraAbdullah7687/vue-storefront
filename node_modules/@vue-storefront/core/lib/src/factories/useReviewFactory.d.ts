@@ -1,0 +1,10 @@
+import { CustomQuery, UseReview, Context, FactoryParams, PlatformApi } from '../types';
+export interface UseReviewFactoryParams<REVIEW, REVIEWS_SEARCH_PARAMS, REVIEW_ADD_PARAMS, API extends PlatformApi = any> extends FactoryParams<API> {
+    searchReviews: (context: Context, params: REVIEWS_SEARCH_PARAMS & {
+        customQuery?: CustomQuery;
+    }) => Promise<REVIEW>;
+    addReview: (context: Context, params: REVIEW_ADD_PARAMS & {
+        customQuery?: CustomQuery;
+    }) => Promise<REVIEW>;
+}
+export declare function useReviewFactory<REVIEW, REVIEWS_SEARCH_PARAMS, REVIEW_ADD_PARAMS, API extends PlatformApi = any>(factoryParams: UseReviewFactoryParams<REVIEW, REVIEWS_SEARCH_PARAMS, REVIEW_ADD_PARAMS, API>): (id: string) => UseReview<REVIEW, REVIEWS_SEARCH_PARAMS, REVIEW_ADD_PARAMS>;
