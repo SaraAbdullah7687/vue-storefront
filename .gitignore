@@ -1,3 +1,4 @@
+#OLD GIT IGNORE
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
@@ -57,7 +58,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+#.env
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -72,10 +73,10 @@ typings/
 _theme
 
 # Nuxt generate
-#dist
+dist
 
 # vuepress build output
-#.vuepress/dist
+.vuepress/dist
 
 # Serverless directories
 .serverless
@@ -99,3 +100,4 @@ version
 ## SSL
 # Untrack all keys
 *.pem
+

@@ -2,12 +2,14 @@
   {
     "name": "home___default",
     "path": "/default",
-    "component": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Home.vue"
+    "component": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Home.vue",
+    "_name": "_fe316e24"
   },
   {
     "name": "cart___default",
     "path": "/default/cart",
-    "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Cart.vue"
+    "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Cart.vue",
+    "_name": "_1e098bb8"
   },
   {
     "name": "checkout___default",
@@ -17,35 +19,42 @@
       {
         "path": "billing",
         "name": "billing___default",
-        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/Billing.vue"
+        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/Billing.vue",
+        "_name": "_4b1ba62a"
       },
       {
         "path": "payment",
         "name": "payment___default",
-        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/Payment.vue"
+        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/Payment.vue",
+        "_name": "_2c6a0f96"
       },
       {
         "path": "shipping",
         "name": "shipping___default",
-        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/Shipping.vue"
+        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/Shipping.vue",
+        "_name": "_5813558f"
       },
       {
         "path": "thank-you",
         "name": "thank-you___default",
-        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/ThankYou.vue"
+        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/ThankYou.vue",
+        "_name": "_41a12136"
       },
       {
         "path": "user-account",
         "name": "user-account___default",
-        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/UserAccount.vue"
+        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/checkout/pages/Checkout/UserAccount.vue",
+        "_name": "_c40e7ede"
       }
-    ]
+    ],
+    "_name": "_78a44a44"
   },
   {
     "name": "Cms___default",
     "path": "/default/Cms",
     "component": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Cms.vue",
-    "chunkName": "pages/Cms"
+    "chunkName": "pages/Cms",
+    "_name": "_3a8cc38a"
   },
   {
     "name": "customer___default",
@@ -61,7 +70,8 @@
         "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/AddressesDetails/AddressesDetails.vue",
         "meta": {
           "titleLabel": "Addresses details"
-        }
+        },
+        "_name": "_7f0c5f31"
       },
       {
         "name": "customer-my-newsletter___default",
@@ -69,7 +79,8 @@
         "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/MyNewsletter.vue",
         "meta": {
           "titleLabel": "My newsletter"
-        }
+        },
+        "_name": "_a7b6f0da"
       },
       {
         "name": "customer-my-profile___default",
@@ -77,7 +88,8 @@
         "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/MyProfile/MyProfile.vue",
         "meta": {
           "titleLabel": "My profile"
-        }
+        },
+        "_name": "_3dd0a56d"
       },
       {
         "name": "customer-my-reviews___default",
@@ -85,7 +97,8 @@
         "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/MyReviews.vue",
         "meta": {
           "titleLabel": "My reviews"
-        }
+        },
+        "_name": "_4557589e"
       },
       {
         "name": "customer-my-wishlist___default",
@@ -93,7 +106,8 @@
         "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/MyWishlist.vue",
         "meta": {
           "titleLabel": "My wishlist"
-        }
+        },
+        "_name": "_6729c9c2"
       },
       {
         "name": "customer-order-history___default",
@@ -101,7 +115,8 @@
         "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/OrderHistory/OrderHistory.vue",
         "meta": {
           "titleLabel": "Order history"
-        }
+        },
+        "_name": "_620d9671"
       },
       {
         "name": "customer-addresses-details-new___default",
@@ -109,13 +124,15 @@
         "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/AddressesDetails/AddressNew.vue",
         "meta": {
           "titleLabel": "Addresses details"
-        }
+        },
+        "_name": "_61b41cbd"
       },
       {
         "name": "reset-password___default",
         "path": "/default/reset-password",
         "alias": "/customer/account/createPassword",
-        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/ResetPassword.vue"
+        "component": "/Users/itadmin/Documents/VSF/vsf-mac/modules/customer/pages/MyAccount/ResetPassword.vue",
+        "_name": "_c4bb7d28"
       },
       {
         "name": "customer-addresses-details-edit___default",
@@ -124,7 +141,8 @@
         "props": true,
         "meta": {
           "titleLabel": "Addresses details"
-        }
+        },
+        "_name": "_3656e886"
       },
       {
         "name": "customer-single-order___default",
@@ -133,35 +151,16 @@
         "props": true,
         "meta": {
           "titleLabel": "Order history"
-        }
+        },
+        "_name": "_6ab81be2"
       }
-    ]
+    ],
+    "_name": "_824ade7a"
   },
   {
     "name": "Faq___default",
     "path": "/default/Faq",
     "component": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Faq.vue",
-    "chunkName": "pages/Faq"
-  },
-  {
-    "name": "Home___default",
-    "path": "/default/Home",
-    "component": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Home.vue",
-    "chunkName": "pages/Home"
-  },
-  {
-    "name": "Page___default",
-    "path": "/default/Page",
-    "component": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Page.vue",
-    "chunkName": "pages/Page"
-  },
-  {
-    "name": "page___default",
-    "path": "/default/:slug+",
-    "component": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Page.vue"
-  }
-]
-mponent": "/Users/itadmin/Documents/VSF/vsf-mac/pages/Faq.vue",
     "chunkName": "pages/Faq",
     "_name": "_76adc252"
   },

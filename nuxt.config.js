@@ -103,7 +103,7 @@ export default async () => {
       '~/modules/checkout',
       '~/modules/review',
       ['nuxt-i18n', {
-        baseUrl: process.env.VSF_STORE_URL || 'https://vsf-app-aupir.ondigitalocean.app:3000',
+        baseUrl: process.env.VSF_STORE_URL || 'http://localhost:3000',
       }],
       'cookie-universal-nuxt',
       'vue-scrollto/nuxt',
