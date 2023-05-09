@@ -2,9 +2,6 @@
   <div id="home">
     <HeroSection
       class="hero-section"
-      :title="hero.title"
-      :subtitle="hero.subtitle"
-      :button-text="hero.buttonText"
       :link="hero.link"
       :image-src="hero.imageSrc"
       :image-width="hero.imageWidth"
@@ -80,7 +77,8 @@ import HeroSection from '~/components/HeroSection.vue';
 import { getMetaInfo } from '~/helpers/getMetaInfo';
 import { useContent } from '~/composables';
 import LoadWhenVisible from '~/components/utils/LoadWhenVisible.vue';
-
+import RenderContent from '~/cms/RenderContent.vue'; // youtube
+
 export default defineComponent({
   name: 'HomePage',
   components: {

@@ -63,5 +63,13 @@ module.exports = {
         },
       },
     },
-  },
+
+    sb: {
+      location: '@vue-storefront/storyblok/server',
+      configuration: {
+        token: process.env.STORYBLOK_TOKRN, // 'CONTENT_DELIVERY_TOKEN', > original
+        cacheProvider: 'memory',
+      },
+  }
+}
 };

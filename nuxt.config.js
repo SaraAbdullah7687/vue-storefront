@@ -60,6 +60,11 @@ export default async () => {
     device: {
       refreshOnResize: true,
     },
+    // youtube
+    // plugins: [
+    //   '~/plugins/scrollToTop.client.js',
+    //   '~/plugins/cms'
+    // ],
     buildModules: [
       // to core
       '@nuxtjs/composition-api/module',
@@ -81,6 +86,11 @@ export default async () => {
             enabled: false,
           },
         },
+        //here
+        useRawSource: {
+          dev: ['@vue-storefront/storyblok'],
+          prod: ['@vue-storefront/storyblok']
+        }
       }],
       ['~/modules/core', {
         cookies,
@@ -102,6 +112,7 @@ export default async () => {
       '~/modules/wishlist',
       '~/modules/checkout',
       '~/modules/review',
+      '@vue-storefront/storyblok/nuxt',
       ['nuxt-i18n', {
         baseUrl: process.env.VSF_STORE_URL || 'http://localhost:3000',
       }],
